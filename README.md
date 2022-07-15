@@ -80,10 +80,10 @@ with Diagram("NextCloud on Google Kubernetes Engine", show=True):
 
     users_01 - internet_01 >> Edge(headport="c", tailport="c", minlen="1", lhead='cluster_Kubernetes') >> gcp_lb
     gcp_lb >> Edge(headport="c", tailport="c", minlen="1", lhead='cluster_MyApp') >> myapp_ing >> Edge(headport="c", tailport="c", minlen="1", lhead='cluster_MyApp pods') >> myapp_node >> myapp_pods << cc_nextcloud 
-    
-    
 ```
 
 ![nextcloud_on_google_kubernetes_engine](/image/nextcloud_on_google_kubernetes_engine.png)
+
+
 
 

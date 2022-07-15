@@ -1,9 +1,7 @@
 from diagrams import Cluster, Diagram, Node, Edge
 from diagrams.k8s.compute import Pod
 from diagrams.gcp.compute import KubernetesEngine
-from diagrams.k8s.network import Ing
 from diagrams.gcp.network import LoadBalancing
-from diagrams.onprem.network import Nginx
 from diagrams.onprem.network import Internet
 from diagrams.onprem.client import Client
 from diagrams.onprem.client import Users
